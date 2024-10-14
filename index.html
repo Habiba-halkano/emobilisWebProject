@@ -1,13 +1,121 @@
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>My Emobilis Webpage</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        button {
+            background-color: green;
+            padding: 20px;
+            color: white;
+            border-right: 5px;
+            margin: 10px;
+        }
+
+        #btnSubmit{
+            background-color: aqua;
+            padding: 20px;
+            color: black;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+        }
+        th  {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid grey;
+        }
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid grey;
+        }
+    </style>
 </head>
-<body>
-<h1>Habiba Halka</h1>
-<h2>Habiba Halka</h2>
-<h3>Habiba Halka</h3>
-<h4>Habiba Halka</h4>
-<h5>Habiba Halka</h5>
-<h6>Habiba Halka</h6>
+<body style="background-color: black;color: white">
+<!--Headers-->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus, magna id dignissim maximus, felis purus aliquam orci, non faucibus leo eros ac mauris. Nam sapien tortor, ultricies non sodales vel, luctus quis erat. Curabitur blandit pretium purus vitae rutrum. Suspendisse in dolor ut metus auctor commodo a ac augue. Vivamus congue luctus magna, id ultrices purus lobortis sed. Duis sed dignissim leo, sit amet convallis velit. Mauris at viverra velit. Praesent congue malesuada lorem, vitae interdum diam tincidunt in.
+    Sed ac felis at nibh pharetra pharetra. Sed quis mauris blandit, consequat urna non, cursus neque.
+</blockquote>
+<button>Click Me</button>
+<button id="btnSubmit">Submit</button>
+
+<img src="assets/img.jpg" width="200" height="200" alt="image here"/>
+<p><u>Ordered list</u></p>
+<ol>
+    <li>Gor Mahia</li>
+    <li>AFC Leopards</li>
+    <li>Sofapaka</li>
+</ol>
+
+<p><u>Unordered list</u></p>
+<ul>
+    <li>Gor Mahia</li>
+    <li>AFC Leopards</li>
+    <li>Sofapaka</li>
+</ul>
+
+<p><u>Table creation</u></p>
+<table>
+    <thead>
+        <th>Position</th>
+        <th>Name</th>
+        <th>Points</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Gor</td>
+        <td>91</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>AFC</td>
+        <td>80</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Sofapaka</td>
+        <td>70</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="2">Total pricing</td>
+        <td>$50.75</td>
+    </tr>
+    </tfoot>
+
+</table>
+
+<p><u>Form Creation</u></p>
+<form method="post">
+    <label>Team Name</label>
+    <input type="text" placeholder="Enter team name" name="team_name"/>
+    <label>Season points</label>
+    <input type="number" placeholder="Enter points" name="season_points"/>
+    <label>Team Email</label>
+    <input type="email" placeholder="Enter Email" name="team_email">
+    <label>Team picture</label>
+    <input type="file" name="team_pic"/>
+    <label>Home Team Color</label>
+    <select name="team_color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+    </select>
+    <input type="submit" value="Submit Team">
+    <input type="reset" value="Reset Team">
+
+</form>
+
 </body>
 </html>
